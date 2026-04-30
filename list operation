@@ -1,0 +1,43 @@
+#list with  different data types
+my_list = [10,3.5,"hello",True]
+print("list:",my_list)
+print("type of list:" ,type(my_list))
+for element in my_list:
+    print(f"type of {element}:",type(element))
+
+#list operations
+a=[1,2,3]
+b=[4,5,6]
+print("concatenation:",a+b)
+print("repetition:",a*3)
+print("Is 2 in a?:",2 in a)
+print("Lemgth of a:",len(a))
+
+#statistical operations on nums
+nums = [10,5,20,8,15]
+print("maximum:",max(nums))
+print("minimum:",min(nums))
+print("sum:",sum(nums))
+print("ascending",sorted (nums))
+print("descending",sorted(nums, reverse=True))
+print("index of 8:",nums.index(8))
+
+
+#modifying a list
+my_list = [10,20,30]
+my_list.append(40)
+my_list.insert(1,15)
+my_list.remove(20)
+my_list.pop()
+print("final list:",my_list)
+
+#problem solving script
+user_input=input("enter numbers separated by space:")
+nums=[int(x) for x in user_input.split()]
+print("even number:",[x for x in nums if x % 2 == 0])
+print("odd number:",[x for x in nums if x % 2 !=0])
+print("largest :",max(nums))
+print("smallest:",min(nums))
+unique_nums= list(set(nums))
+print("unique list :",unique_nums)
+      
